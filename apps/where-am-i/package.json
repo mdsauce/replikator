@@ -1,0 +1,15 @@
+{
+  "name": "where-am-i",
+  "version": "1.0.0",
+  "description": "find the details of your IPv4 address",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js"
+  },
+  "author": "max.dobeck",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "geoip-lite": "^1.4.2"
+  }
+}
