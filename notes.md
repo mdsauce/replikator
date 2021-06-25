@@ -10,6 +10,20 @@ https://medium.com/@fiercely/virtualization-on-mac-os-x-using-vagrant-part-1-be0
 
 Example of Vagrant + Virtual box internally at sauce: https://gitlab.prod.sjc3.saucelabs.net/vdc/vdc-tooling-vm/-/tree/marek-init
 
+Examples of stuff we need (all items include sc at some level unless otherwise stated):
+* server with nginx proxy that filters incoming traffic. 
+* simple proxy (of any flavor) that routes some stuff to a localhost server and some stuff out to the internet
+* iptables firewall
+* localhost app/api only available from sc tunnel
+* systemd tunnel management
+    1. running like 5 of the same tunnel
+    1. configuring and running two to three flavors of tunnel
+    1. persisting or saving logs
+* [webRTC](https://www.youtube.com/watch?v=WmR9IMUD_CY) server test?
+* file upload/download into a VM or phone
+* multipeer app test (multiple VMs)
+
+
 # Setup
 Do NOT use virtualbox if you're on a mac.  Just use the default [hyperkit](https://github.com/moby/hyperkit), which may require docker.
 
